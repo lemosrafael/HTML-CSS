@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+
+
+@font-face {
+    font-family: "Lemon";
+    src: url("../Desafio009/fontes/LEMONMILK-Bold.otf") format("opentype");
+    font-weight: normal;
+    
+}
+:root {
+    --cor01:#165A67;
+    --cor02:#259BB3;
+    --cor03:#417580;
+    --cor04:#5BA4B3;
+    --cor05:#0C3138;
+
+    --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Lemon", cursive;
+   
+}
+
+body {
+    background-color: var(--cor04);
+    font-family: var(--fonte-padrão);
+
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor05), var(--cor02));
+    font-family: var(--fonte-destaque);
+    padding: 30px;
+    text-align: center;
+    color: white;
+    margin: auto;
+    width: 100%;
+    
+}
+
+nav {
+    padding: 20px;
+    background-color: var(--cor02);
+    width: 100%;
+}
+
+nav > a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--fonte-padrão);
+    margin: 10px;
+}
+
+nav > a:hover {
+
+    background-color: var(--cor04);
+    padding: 7px;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+
+}
+main {
+    background-color: rgb(201, 217, 223);
+    max-width: 1000px;
+    min-width: 350px;
+    border-radius: 0px 0px 10px 10px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.432);
+}
+
+main > h2 {
+    font-family: var(--fonte-destaque);
+    color: var(--cor05);
+    font-weight: bold;
+    background-image: linear-gradient(to right, var(--cor02), transparent);
+}
+
+main > p{
+    font-family: var(--fonte-padrão);
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+
+}
+
+main > img {
+    margin: auto;
+    display: block;
+}
+
+aside {
+    background-image: linear-gradient(to bottom, var(--cor04), var(--cor05));
+    margin: auto;
+    padding: 1px;
+}
+
+aside > h2 {
+    font-family: var(--fonte-destaque);
+    color: white;
+    text-align: center;
+}
+
+aside > ul {
+    text-align: justify;
+    color: white;
+    font-family: var(--fonte-padrão);
+
+}
+
+li > a {
+    text-decoration: none;
+    margin: auto;
+    font-family: var(--fonte-padrão);
+    color: white;
+
+}
+
+li > a:hover {
+    text-decoration: underline;
+    color: var(--cor03);
+
+}
+
+footer {
+    background-color: var(--cor05);
+    color: white;
+    padding: 10px;
+}
